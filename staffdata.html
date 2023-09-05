@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Data Form</title>
+</head>
+<body>
+    <h1>Staff Data</h1>
+    <form action="" id="staffform">
+        <fieldset id="personalInfo">
+            <legend id="personal">Personal Info</legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label for="staffname">Staff Name</label></td>
+                        <td><input type="text" name="staffname" id="staffname" placeholder="Enter the staff name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="contactnumber">Contact Number</label></td>
+                        <td><input type="tel" name="contactnumber" id="contactnumber" placeholder="Enter the contact number" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">Residential Address</label></td>
+                        <td><textarea name="address" placeholder="Enter the residential address" id="address" cols="40" rows="3" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dateofbirth">Date of Birth</label></td>
+                        <td><input type="text" placeholder="Select the date of birth" onblur="(this.type='text')" onclick="(this.type='date')" name="dateofbirth" id="dateofbirth" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="maritalstatus">Marital Status</label></td>
+                        <td>
+                            <input type="radio" name="maritalstatus" id="married"><span>Married</span>
+                            <input type="radio" name="maritalstatus" id="unmarried"><span>Unmarried</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Mail</label></td>
+                        <td><input type="email" name="email" id="email" placeholder="Enter the mail address" required></td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <fieldset id="professinalInfo">
+            <legend id="professionalInfo">Professinal Info</legend>
+            <table>
+            <tbody>
+                <tr>
+                    <td><label for="staffid">Staff Id</label></td>
+                    <td><input type="text" placeholder="Enter the staff id" pattern="TEK/\d{3}" name="staffid" id="staffid"></td>
+                </tr>
+                <tr>
+                    <td><label for="department">Department</label></td>
+                    <td><select name="department" id="department">
+                            <option value="Select">--Select--</option>
+                            <option value="Mech">Mechanical</option>
+                            <option value="ECE">ECE</option>
+                            <option value="CSE">CSE</option>
+                            <option value="IT">IT</option>
+                            <option value="Civil">Civil</option>
+                            <option value="EEE">EEE</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="designation">Designation</label></td>
+                    <td><input type="text" list="designationList" name="designation" id="designation" placeholder="Enter the designation" autocomplete>
+                        <datalist id="designationList">
+                            <option value="pricipal">Pricipal</option>
+                            <option value="vice pricipal">Vice Pricipal</option>
+                            <option value="hod">HOD</option>
+                            <option value="associate professor">Associate Professor</option>
+                            <option value="assistant professor">Assistant Professor</option>
+                            <option value="lecturer">Lecturer</option>
+                            <option value="assistant lecturer">Assistant Lecturer</option>
+                            <option value="lab assistant">Lab Assistant</option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="joiningdate">Date of Joining</label></td>
+                    <td><input type="text" placeholder="Select the joining date" name="joiningdate" id="joiningdate"  onblur="(this.type='text')" onclick="(this.type='date')" required></td>
+                </tr>
+                <tr>
+                    <td><label for="salary">Salary</label></td>
+                    <td><input type="number" name="salary" id="salary" placeholder="Enter the salary" required></td>
+                </tr>
+                <tr>
+                    <td><label for="rating">Performace Rating</label></td>
+                    <td>
+                        <input type="range" name="rating" id="rating" value="0" min="0" max="5" step="0.5" required>
+                        <span><span id="demo">0</span> (out of 5)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="photo">Attachment</label></td>
+                    <td><input type="file" name="photo" id="photo" accept="image/jpeg" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" name="lop" id="lop">
+                        <label for="lop">Click here, If the Staff had Loss Of Pay for the given year</label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </fieldset>
+        <p><button type="submit" id="update" value="Update" onclick="alert('Updated the staff details successfully!!!')">Update</button></p>
+    </form>
+
+    <script>
+        const range = document.getElementById('rating');
+        const value = document.getElementById('demo');
+        range.addEventListener("input",function(){
+            value.textContent = range.value;
+        })
+    </script>
+</body>
+</html>
