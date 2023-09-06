@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Link -->
+
+    <title>Bootstrap 4 Responsive Navbar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <header class="container">
+        <nav id="" class="navbar navbar-expand-md bg-dark navbar-dark">
+            <a href="#" class="navbar-brand">TrackIt</a>
+            <button type="submit" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item active"><a href="#" class="nav-link">About Us</a></li>
+                    <li class="nav-item active"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="#" class="nav-link">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="mt-5">Track the Payment - TrackIt</h2>
+                <ul class="list-unstyled">
+                    <li>Allows you to track your Bill Payment</li>
+                    <li>Help to automate delivery for customers with no need to install or download annything</li>
+                    <li>A customizeble tool for ensuring that any payment you have to make are paid on time.</li>
+                </ul><br>
+                <h4>Greater comfort. Stronger performance. Improved security. No Compromise</h4>
+                <br>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8" id="tableContainer">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <td>No.</td>
+                            <td>Bill</td>
+                            <td>Payment Date</td>
+                            <td>Payment Status</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table table-warning">
+                            <td>1</td>
+                            <td>Credit Card</td>
+                            <td>05/07/2022</td>
+                            <td>Pending</td>
+                        </tr>
+                        <tr class="table table-success">
+                            <td>2</td>
+                            <td>Internet</td>
+                            <td>05/07/2022</td>
+                            <td>Paid</td>
+                        </tr>
+                        <tr class="table table-danger">
+                            <td>3</td>
+                            <td>Telephone</td>
+                            <td>05/07/2022</td>
+                            <td>Due</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
