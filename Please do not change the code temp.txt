@@ -1,0 +1,98 @@
+/* Please do not change the code template*/
+h1 {
+	border:8px ridge #cf2984;
+    /* Please fill the other attributes */
+    color: #eeeaf2;
+    background-color: #601625;
+    height: 55px;
+    width: 50%;
+    text-align: center;
+    font-size: 35px;
+    margin-left: 28%;
+    padding-top: 13px;
+    outline-color: #e6e600;
+    outline-style: groove;
+    outline-width: 5px;
+    border-radius: 5px;
+}
+#personal:hover, #professional:hover{
+    text-decoration: underline ;
+    background-color: #92b08b;
+    color: #0f3c4c;
+}
+/* Fill the code */
+
+fieldset{
+    margin-left: 35%;
+    width: 37%;
+    background-color: #f89eb6;
+    border-style: double;
+    border-width: 5px;
+    border-color: #8e3116;
+}
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+table{
+    font-weight: bold;
+    font-size: 18px;
+    color: #440315;
+    border-collapse: collapse;
+    border-spacing: 7px;
+}
+legend{
+    background-color: #76b5c5;
+    font-size: 22px;
+    border-style: groove;
+    border-width: 3px;
+    border-color: #663fa6;
+    border-radius: 10px;
+}
+input, textarea, select{
+    border-radius: 5px;
+    margin-left: 50%;
+    height: 25px;
+}
+textarea{
+    height: 40px;
+}
+output{
+    margin-left: 50%
+}
+
+#professionalInfo input,
+#professionalInfo select{
+    margin-left: 35%;
+}
+
+button{
+    background-color: #0b750b;
+    color: #ffffff;
+    height: 30px;
+    margin-left: 35%;
+}
+#professionalInfo input[type="checkbox"] {
+    margin-left: 0%;
+}
+#rating, 
+select{
+    width: 70%;
+}
+
+#personal:hover, 
+#professional:hover{
+    text-decoration: underline;
+    background-color: #92b08b;
+    color: #0f3c4c;
+}
+
+
+
+
+
+
+
+
+
+
